@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-generator" />
         <module name="cloud-provider-payment" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-consumer-order" />
       </profile>
     </annotationProcessing>
   </component>
