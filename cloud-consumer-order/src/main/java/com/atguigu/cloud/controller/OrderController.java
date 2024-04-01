@@ -35,4 +35,9 @@ public class OrderController {
     public ResultData getPayInfo(@PathVariable("id") Integer id) {
         return restTemplate.getForObject(PaymentSrv_URL + "/pay/get/" + id, ResultData.class, id);
     }
+
+    @GetMapping("/consumer/pay/get/info")
+    public String getConsulInfo() {
+        return restTemplate.getForObject(PaymentSrv_URL + "/pay/get/info", String.class);
+    }
 }
